@@ -36,7 +36,7 @@ export default function DiscoverMoviesPage() {
       {movies.map((movie) => {
         return (
           <div key={movie.imdbID}>
-            <Link to={`/discover/${movie.imdbID}`}>{movie.Title}</Link>
+            <Link to={`/movie/${movie.imdbID}`}>{movie.Title}</Link>
             <h4>Release year:{movie.Year}</h4>
             <img src={movie.Poster} alt="Poster" />
           </div>
